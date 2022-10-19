@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+          
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Recipe Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Category</th>
+        <th scope="col">Posted Date</th>
+        <th scope="col">Price</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of recipeData">
+        
+
+        <td>{{i.id}}</td>
+        <td>{{i.recipename}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.category}}</td>
+        <td>{{i.posteddate}}</td>
+        <td>{{i.price}}</td>
+       
+
+      </tr>
+     
+    </tbody>
+  </table>
+
+        </div>
+    </div>
+</div>
+
+
+

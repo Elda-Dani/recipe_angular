@@ -8,17 +8,22 @@ import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewallComponent } from './viewall/viewall.component';
 
 const approutes:Routes=[
   {
     path:"",component:AddrecipeComponent
+  },
+  {
+    path:"view",component:ViewallComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddrecipeComponent
+    AddrecipeComponent,
+    ViewallComponent
   ],
   imports: [
     BrowserModule,
