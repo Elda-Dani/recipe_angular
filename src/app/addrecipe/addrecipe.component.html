@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+<div class="row g-4">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label">Recipe Name</label>
+    <input type="text" class="form-control" name="recipename" [(ngModel)]="recipename">
+</div>
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label"> Description</label>
+<textarea name="description" [(ngModel)]="description" id="" cols="30" rows="10" class="form-control"></textarea>
+</div>
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label">Category</label>
+    <select name="category" [(ngModel)]="category" id="" class="form-control">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+        <option value="Egitarian">Egitarian</option>
+    </select>
+</div>
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <label for="" class="form-label">Posted Date</label>
+    <input type="date" name="posteddate" [(ngModel)]="posteddate" id="" class="form-control">    
+</div>
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <label for="" class="form-label">Price</label>
+    <input type="text" class="form-control" name="price" [(ngModel)]="price">
+</div>
+
+
+
+
+
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12-col-xxl-12">
+
+<button class="btn btn-info" [disabled]="status" (click)="readValues()">Submit</button>
+</div>
+
+
+
+
+</div>
+
+
+
+
+        </div>
+
+   
+</div>
+</div>
